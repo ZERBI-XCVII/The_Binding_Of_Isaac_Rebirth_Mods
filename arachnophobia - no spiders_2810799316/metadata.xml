@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Arachnophobia - No Spiders</name>
+    <directory>arachnophobia - no spiders</directory>
+    <id>2810799316</id>
+    <description>[h1]Introduction[/h1]
+Are you tired of fighting spider monsters or do you simply hate them? 
+Then this is the mod for you!
+
+[h1]Description[/h1]
+This mod [b][u]replaces[/u][/b] all spider monsters, bosses, familiars and items with equivalent ones.
+(Look in the mod's folder for the complete list).
+
+[h1]Compatibility[/h1]
+[b]Repentance[/b] (tested)
+[b]Afterbirth+[/b] (not tested but it should work)
+[b]Mod Config Menu[/b] (you can disable/enable replacements for monsters &amp; bosses, familiars, items).</description>
+    <version>1.1</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+    <tag id="Removals"/>
+</metadata>
