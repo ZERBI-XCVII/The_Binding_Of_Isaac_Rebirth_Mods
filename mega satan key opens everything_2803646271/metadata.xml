@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Mega Satan Key Opens Everything</name>
+    <directory>mega satan key opens everything</directory>
+    <id>2803646271</id>
+    <description>[h1]Description[/h1]
+This mod will give you a [u]permanent[/u] [b]Golden Key[/b] when you acquire the [b]Mega Satan Key[/b] (Key Piece 1 + Key Piece 2).
+Consequently, you will be able to open all doors, chests, locks, etc... without needing normal keys.
+ 
+
+[h1]Compatibility[/h1]
+[b]Repentance[/b] (tested).
+[b]Afterbirth+[/b] ([u]not[/u] tested but it should works).</description>
+    <version>1.1</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+</metadata>
