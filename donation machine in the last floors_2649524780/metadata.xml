@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Donation Machine In The Last Floors</name>
+    <directory>donation machine in the last floors</directory>
+    <id>2649524780</id>
+    <description>[h1]Description[/h1]
+This mod adds an unjammed [u][b]Donation Machine[/b][/u] to the first room of the following floors:
+- Corpse
+- Blue Womb (Hush)
+- Cathedral, Sheol
+- Chest, Dark Room
+- The Void
+- Home
+
+In addition, this mod adds an unjammed [u][b]Greed Donation[/b][/u] Machine to the first room of the floor:
+- Ultra Greed
+
+[h1]Compatibility[/h1]
+Afterbirth+ &amp; Repentance</description>
+    <version>1.4</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+</metadata>
