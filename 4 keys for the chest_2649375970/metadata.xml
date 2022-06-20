@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>4 Keys For The Chest</name>
+    <directory>4 keys for the chest</directory>
+    <id>2649375970</id>
+    <description>This mod make sure that you will always have at least 4 keys when you reach The Chest (and Blue Womb).</description>
+    <version>1.1</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Pickups"/>
+    <tag id="Tweaks"/>
+</metadata>
