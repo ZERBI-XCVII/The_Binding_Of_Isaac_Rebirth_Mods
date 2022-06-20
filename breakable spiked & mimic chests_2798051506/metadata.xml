@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Breakable Spiked &amp; Mimic Chests</name>
+    <directory>breakable spiked &amp; mimic chests</directory>
+    <id>2798051506</id>
+    <description>[h1]Description[/h1]
+This mod will allow you to open [b]Spiked Chests[/b] &amp; [b]Mimic Chests[/b] with bombs!
+
+[h1]Compatibility[/h1]
+[b]Afterbirth+[/b] &amp; [b]Repentance[/b].</description>
+    <version>1.2</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+</metadata>
