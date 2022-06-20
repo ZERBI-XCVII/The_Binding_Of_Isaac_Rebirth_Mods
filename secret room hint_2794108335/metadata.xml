@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Secret Room Hint</name>
+    <directory>secret room hint</directory>
+    <id>2794108335</id>
+    <description>[h1]Description[/h1]
+This mod gives you a hint in order to find secret / super secret / ultra secret rooms / crawlspaces / black markets more easily.
+
+[h1]How it works[/h1]
+[b][u]Secret / Super Secret Rooms:[/u][/b] every time you enter a room, if there is a Secret / Super Secret Room entrance, you have 10% probability to see a new [b][u]light-blue[/u][/b] wisp (near the wall you should bomb).
+
+[b][u]Ultra Secret Rooms:[/u][/b] every time you enter a room, if you have either a Red Key, a Craked Key or a Soul of Cain and there is a Ultra Secret Room near you (max 1-2 rooms distance), you have 10% probability to see a new [b][u]red[/u][/b] wisp.
+
+[b][u]Crawlspaces / Black Markets:[/u][/b] every time you enter a room, if under a rock there is a trapdoor that leads to a crawlspace, you have 10% probability to see a new [b][u]purple[/u][/b] wisp.
+^^^due to latest update these wisps do not spawn correctly. Sorry. New update with a fix asap
+
+[b][u]Note[/u][/b]: every point of luck will increase the probability of seeing a wisp by 5%.
+
+[h1]Compatibility[/h1]
+[b]Repentance[/b] (tested)
+[b]Afterbirth+[/b] (NOT tested but it should work)
+[b]Afterbirth+[/b] for MAC OS (it does NOT work)
+
+[b]Mod Config Menu[/b]
+- McM: you can disable/enable each type of wisps
+- McM: you can set the probability for the wisps (base and bonus probability)
+- McM: you can set the colour of the wisps!
+
+[h1]Credits[/h1]
+I took part of the code from this [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2488298288&amp;searchtext=secret+room+placeholder] mod [/url] made by [url=https://steamcommunity.com/id/DarkElias] HeliOS [/url].</description>
+    <version>1.5</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Rooms"/>
+    <tag id="Tweaks"/>
+    <tag id="Graphics"/>
+</metadata>
