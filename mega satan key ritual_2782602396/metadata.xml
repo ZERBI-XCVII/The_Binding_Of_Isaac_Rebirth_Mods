@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Mega Satan Key Ritual</name>
+    <directory>mega satan key ritual</directory>
+    <id>2782602396</id>
+    <description>[h1]Description[/h1]
+This mod adds an alternative way to obtain the Mega Satan Key.
+
+[h1]How it works[/h1]
+Once you have [b]20[/b] keys, if you return to the starting room of the floor*, you can
+exchange [b]all[/b] your hearts**, coins, keys, bombs for the Mega Satan Key by stepping on the spikes on the ground.
+
+Additional rules:
+[list]
+    [*]If you already own 1 piece of the key, you will recive 1 black hearts intead.
+    [*]If you own 1 or more items from Angel Item Pool, the ritual will not show up.
+[/list]
+
+*[u]Note[/u]: this mod is disabled on the floors: Blue Womb, Chest/Dark Room, The Void and Home due to the shape of their first room.
+
+**[u]Note[/u]: you will remain with:
+[list]
+    [*]1 red heart (if you have 1 or more health coontainers)
+    [*]1 black heart (if you have 0 health containers)
+[/list]
+
+[h1]Compatibility[/h1]
+Afterbirth+ and Repentance.
+
+[hr][/hr]
+Similar mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2783022037</description>
+    <version>1.5</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Items"/>
+    <tag id="Tweaks"/>
+</metadata>
