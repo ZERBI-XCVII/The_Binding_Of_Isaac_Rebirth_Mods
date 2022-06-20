@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Mega Satan Key Ritual+</name>
+    <directory>mega satan key ritual+</directory>
+    <id>2783022037</id>
+    <description>[h1]Description[/h1]
+This mod adds an alternative way to obtain the Mega Satan Key.
+
+[h1]How it works[/h1]
+Once you reach the [b][u]Dark Room[/u][/b], you can exchange all of your hearts*, coins, keys and bombs for the Mega Satan Key by stepping on the spikes on the ground.
+
+Each sacrified thing will give you a [b][u]damage bonus[/u][/b]:
+[list]
+    [*]Heart: +0.50
+    [*]Coin: +0.01
+    [*]Key/Bomb: +0.05
+[/list]
+
+Additional rules:
+[list]
+    [*]Total damage bonus is limited to +10.
+    [*]The ritual will give you 1 black heart for every item from Devil Item Pool you own (max +5 black hearts in total).
+    [*]If you already own 1 piece of the key, you will recive 2 additional black hearts.
+    [*]If you own 1 or more items from Angel Item Pool, the ritual will [b][u]not[/u][/b] show up.
+[/list]
+
+*[u]Note[/u]: you will remain with:
+[list]
+    [*]1 red heart (if you have 1 or more health coontainers)
+    [*]1 black heart (if you have 0 health containers)
+[/list]
+
+[h1]Compatibility[/h1]
+Afterbirth+ and Repentance.
+
+[hr][/hr]
+Similar mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2782602396</description>
+    <version>1.6</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Items"/>
+    <tag id="Tweaks"/>
+</metadata>
