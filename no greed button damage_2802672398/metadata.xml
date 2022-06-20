@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>No Greed Button Damage</name>
+    <directory>no greed button damage</directory>
+    <id>2802672398</id>
+    <description>[h1]Description[/h1]
+This mod will prevent you from taking damage from the [b]Greed Button[/b].
+Instead of the damage you will lose [b]1 coin[/b].
+[u]Note[/u]: if you don't have 1 or more coins you will receive the normal damage.
+
+As secondary effects, you will be able to stop [b]Greed Mode Waves[/b] / [b]Greed Mode Timer[/b]. 
+
+[h1]Compatibility[/h1]
+[b]Repentance[/b] (tested).
+[b]Afterbirth+[/b] ([u]not[/u] tested but it should works).
+This mod is [b]not[/b] compatible with other mods that use the callback MMC_ENTITY_TAKE_DMG to remove the Greed Button damage.</description>
+    <version>1.5</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+</metadata>
