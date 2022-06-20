@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>No Hearts Left Behind</name>
+    <directory>no hearts left behind</directory>
+    <id>2656141817</id>
+    <description>[b]Are you tired of leaving all those unused hearts at the end of each floor? Yes? 
+Then this mod is for you![/b]
+
+[hr][/hr]
+[h1]How it works[/h1]
+[b][u]Replacements will occur on COLLISION[/u][/b]. There are 8 possible cases:
+
+[b]1) RED hearts replacements at 0 hearts CONTAINERS[/b]
+[b]2) RED hearts replacements at max RED hearts[/b]                                     
+[b]3) SOUL &amp; BLENDED hearts replacements at max SOUL/BLACK hearts[/b]                                                 
+[b]4) BLACK hearts replacements at max BLACK hearts[/b]                                                                   
+[b]5) ROTTEN hearts replacements at max ROTTEN hearts[/b] 
+[b]6) BONE hearts replacements at max BONE hearts[/b]                                                                  
+[b]7) GOLDEN hearts replacements at max GOLDEN hearts[/b]                   
+[b]8) ETERNAL hearts replacements at max CONTAINERS[/b]   
+                                                                   
+These replacements will be [b][u]disabled[/u][/b] in the following cases:
+- if you will find Dark Bum familiar; &lt;-- (1) (2)
+- if you are playing as: Tainted Bethany; &lt;-- (1) (2)
+- if you are playing as: Tainted Cain, The Keeper / Tainted Keeper; &lt;-- from (1) to (8)
+- if you have the trinket &quot;Apple of Sodom&quot;; &lt;-- (1) (2)
+- if you have the collectible &quot;Bag of Crafting&quot;; &lt;-- from (1) to (8)
+- if you disabled the replacements for your current character in the ModConfigMenu;
+  ^^^ from (1) to (8)
+- if you disabled this type of replacement in the ModConfigMenu; &lt;-- from (1) to (8)
+- if you are pressing the keyboard button ENTER &lt;-- from (1) to (8)
+
+[hr][/hr]
+[h1]Compatibility[/h1]
+[b]Afterbirth+ &amp; Repentance[/b] 
+[b]ModConfigMenu[/b]: 
+- you can disable this mod for Blue Baby, Tainted Blue Baby, The Lost, Tainted Lost. Consequently this mod is compatible with every other mods that replace hearts for these characters, for example &quot;[b]Blue Baby Rework[/b]&quot;, &quot;[b]Blue Hearts for Blue Baby[/b]&quot; (they can work at the same time if you want), &quot;[b]Lost Hearts[/b]&quot;, ecc...
+- you can disable each types of replacements (individually)</description>
+    <version>1.16</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Pickups"/>
+    <tag id="Tweaks"/>
+</metadata>
