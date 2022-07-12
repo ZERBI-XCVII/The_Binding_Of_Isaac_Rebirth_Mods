@@ -32,11 +32,12 @@ These replacements will be [b][u]disabled[/u][/b] in the following cases:
 
 [hr][/hr]
 [h1]Compatibility[/h1]
-[b]Afterbirth+ &amp; Repentance[/b] 
+[b]Afterbirth+[/b] &amp; [b]Repentance[/b].
+
 [b]ModConfigMenu[/b]: 
 - you can disable this mod for Blue Baby, Tainted Blue Baby, The Lost, Tainted Lost. Consequently this mod is compatible with every other mods that replace hearts for these characters, for example &quot;[b]Blue Baby Rework[/b]&quot;, &quot;[b]Blue Hearts for Blue Baby[/b]&quot; (they can work at the same time if you want), &quot;[b]Lost Hearts[/b]&quot;, ecc...
 - you can disable each types of replacements (individually)</description>
-    <version>1.16</version>
+    <version>1.17</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Pickups"/>
