@@ -1,4 +1,4 @@
-local Mod = RegisterMod("Secret Room Hint",1)
+local Mod = RegisterMod("Secret Room Hint", 1)
 
 --BOI LUA API: 	https://wofsauge.github.io/IsaacDocs/rep/index.html
 --USR guide:	https://www.naguide.com/the-binding-of-isaac-rebirth-how-to-find-ultra-secret-rooms/
@@ -6,14 +6,11 @@ local Mod = RegisterMod("Secret Room Hint",1)
 
 --[[
 TO DO LIST:
-- verificare che, utilizzando il mod config menu con le funzioni Mod.XXX, non vengano attivate allo stesso tempo tutte le altre funzioni con lo stesso nome.
-  esempio: la funzione per salvare le modifiche del McM viene attivata tramite Mod.SaveGame. Cosa accade se un'altra mod ha la funzione Mod.SaveGame? Vengono attivate entrambe?
-  nel caso si attivassero entrambe devo riscrivere quelle funzioni utilizzando nomi propri. O sennò mettere all'inizio un local Mod = nomeMod.
 
-- mettere gli wisp per le S e SS rooms di colore verde (?)
 
 THINGS DONE:
-
+- better code
+- default green wisps for S and SS rooms (not blue anymore)
 ]]--
 
 --McM: default settings
@@ -30,12 +27,12 @@ local ModSettings = {
 	
 	--Colour for S and SS rooms = light-blue
 	["S_SS_intRed"]   = 0, 		--> These 3 values are set trough McM
-	["S_SS_intGreen"] = 0,
-	["S_SS_intBlue"]  = 255,
+	["S_SS_intGreen"] = 255,
+	["S_SS_intBlue"]  = 0,
 	
-	["S_SS_floatRed"]   = 0,	--> These 3 values are AUTOMATICALLY set after changing the other 3^^^
-	["S_SS_floatGreen"] = 0,	--  Why? Because setting a colour through a number between 0-1 is not intuitive. 
-	["S_SS_floatBlue"]  = 1,	--  Instead, using the RGB scale (0-255) is easier.
+	["S_SS_floatRed"]   = 0,	--> These 3 values are AUTOMATICALLY set after changing the other 3^^^ (but in this file you must change both)
+	["S_SS_floatGreen"] = 1,	--  Why? Because setting a colour through a number between 0-1 is not intuitive. 
+	["S_SS_floatBlue"]  = 0,	--  Instead, using the RGB scale (0-255) is easier.
 	
 	--Colour for USR = red
 	["USR_intRed"]   = 255,
@@ -56,10 +53,11 @@ local ModSettings = {
 	["Crawl_floatBlue"]  = 1
 }
 
-function Mod:onNewRoom()
+function Mod:onNewRoom() 
 	
-	--Check S-SS-US Rooms based on luck
+	--Check S-SS-US Rooms and Crawlspaces based on luck
 	local player = Isaac.GetPlayer(0)
+	local level = Game():GetLevel()
 	local probabilityWisp = ModSettings["baseWispsProbability"] + (player.Luck * ModSettings["bonusWispsProbability"]) 
 	local randomNumb = math.random(100)
 
@@ -67,17 +65,17 @@ function Mod:onNewRoom()
 		
 		--Check for S and SS rooms
 		if ModSettings["S_SS_wisps"] then
-			Mod:findSecretDoor()
+			Mod:findSecretDoor(level)
 		end
 		
 		--Check for USR
 		if ModSettings["USR_wisps"] and REPENTANCE then
-			Mod:findUSR()
+			Mod:findUSR(player, level)
 		end
 		
 		--Check for Crawlspaces
 		if ModSettings["Crawl_wisps"] then
-			Mod:findCrawlspace()
+			Mod:findCrawlspace(player, level)
 		end
 		
 	end
@@ -91,10 +89,9 @@ Mod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Mod.onNewRoom)
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-function Mod:findSecretDoor()
+function Mod:findSecretDoor(level)
 	
 	--Check if we are in a S or SS Room (we don't need to check if we are in a USR)
-	local level = Game():GetLevel()
 	local currentRoom = level:GetCurrentRoom()
 	local currentRoomType = currentRoom:GetType()
 	local NOT_in_a_Secret_Room = true
@@ -132,10 +129,9 @@ end
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-function Mod:findUSR()
+function Mod:findUSR(player, level)
 		
 	--Check if you own something that can make Red Rooms
-	local player = Isaac.GetPlayer(0)
 	local canCreateRedRoom = false
 			
 	--Check for items
@@ -164,7 +160,6 @@ function Mod:findUSR()
 	--If you can make Red Rooms it checks for USR
 	if canCreateRedRoom == true then
 		
-		local level = Game():GetLevel()
 		local currentRoomIndex = level:GetCurrentRoomIndex()	-- Return the room ID based on the LEVEL grid --> https://wofsauge.github.io/IsaacDocs/rep/Level.html?h=getcurrentroomindex#getcurrentroomindex
 		local roomIDpattern = { -14, -12, 12, 14, -2, 2, -26, 26}
 
@@ -191,13 +186,11 @@ end
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-function Mod:findCrawlspace()
+function Mod:findCrawlspace(player, level)
 	
-	--Seed for the test: MPNXXPSS (Repentance, Normal mode -> crawl space on the second room to the left)
+	--Seed for the test: 2XLMEZTJ (Repentance, Normal mode -> crawl space on the first floor)
 	
-	local level = Game():GetLevel()
 	local room = level:GetCurrentRoom()
-	local player = Isaac.GetPlayer(0)
 
 	local rockGridID = room:GetDungeonRockIdx()													--> grid ID of rock with a trapdoor beneath (use "debug 11" in order to show an in-game grid)
 	
@@ -623,8 +616,8 @@ end
 local json = require("json")
 local SaveState = {}
 function Mod:SaveGame()
+
 	SaveState.Settings = {}
-	
 	for i, v in pairs(ModSettings) do
 		SaveState.Settings[tostring(i)] = ModSettings[i]
 	end
@@ -635,8 +628,8 @@ Mod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, Mod.SaveGame)
 --McM: load function
 function Mod:OnGameStart()
 	if Mod:HasData() then	
+	
 		SaveState = json.decode(Mod:LoadData())	
-
 		for i, v in pairs(SaveState.Settings) do
 			ModSettings[tostring(i)] = SaveState.Settings[i]
 		end
