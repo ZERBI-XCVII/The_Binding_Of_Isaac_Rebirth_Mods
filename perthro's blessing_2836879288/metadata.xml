@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Perthro's Blessing</name>
+    <directory>perthro's blessing</directory>
+    <id>2836879288</id>
+    <description>[h1]Introduction[/h1]
+Are you tired of finding another active item while you are already holding one, aren't you? 
+Then this is the mod for you!
+
+[h1]Description[/h1]
+This mod will spawn a [b][u]Rune of Perthro[/u][/b] (that can rerolls all item pedestals in the room) if you find an active item while you are already holding one.
+
+Additional rules:
+- max 1 blessing per [b]run[/b]
+- max 1 blessing per [b]floor[/b]
+- works in almost every type of rooms
+
+[b][u]Note[/u][/b]: All the previous rules can be modified through Mod Config Menu.
+
+[b][u]Note[/u][/b]: The mod works only with vanilla active items. If you want to add some modded active items, enable in the McM the debug message, read the ID of the collectible you want to add and then leave a comment here, I will add it to the mod.
+
+[h1]Compatibility[/h1]
+[b]Repentance[/b] (tested)
+[b]Afterbirth+[/b] (not tested but it should work)
+[b]Mod Config Menu[/b]</description>
+    <version>1.1</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Active Items"/>
+    <tag id="Pickups"/>
+    <tag id="Tweaks"/>
+</metadata>
